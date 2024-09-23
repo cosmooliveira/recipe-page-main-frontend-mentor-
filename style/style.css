@@ -31,6 +31,9 @@ img{
 h1, h2{
     font-family: "Young Serif";
 }
+h2{
+    color: hsl(14, 45%, 36%);
+}
 /*configurações globais da fonte do texto h1 e h2*/
 h1{
     font-size: 2.5rem;
@@ -39,7 +42,7 @@ h1{
 h1.espacamento{
     padding-top: 20px;
 }
-p.espacamento{
+p.espacamento, h2.espacamento{
     padding: 20px 0;
 }
 p.espacamento, li{
@@ -49,8 +52,8 @@ p.espacamento, li{
 OBS: também estão configurada a cor do texto das li*/
 
 div.preparation-time{
-    background-color: hsl(330, 100%, 98%);
-    padding: 30px;
+    background-color: hsla(330, 100%, 98%, 0.699);
+    padding: 30px 30px 15px 30px;
     margin-top: 20px;
     border-radius: 10px;
 }
@@ -61,13 +64,58 @@ h3.preparation-time{
 li.preparation-time::marker{
     color: hsl(332, 51%, 32%);
 }
-li.preparation-time{
-    padding-bottom: 10px;
-}
-strong{
-    padding-left: 20px;
-}
 ul{
     padding-left: 20px;
 }
 /*todas as configurções da primeira parte o preparation time*/
+li::marker{
+    color: hsl(14, 45%, 36%);
+    
+}
+h2.espacamento{
+    font-weight: 500;
+    font-size: 28px;
+}
+li{
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+hr{
+    margin-top:25px ;
+    margin-bottom: 15px;
+    border-color: hsla(15, 4%, 18%, 0.075);
+}
+ol{
+    padding-left: 25px;
+}
+li::marker {
+    font-weight: bolder;
+}
+/*todas as configurações do instrutions*/
+p.espacamento-nutrition{
+    color: hsl(30, 10%, 34%);
+    padding-bottom: 20px;
+}
+
+th{
+    color: hsl(30, 10%, 34%);
+    font-weight: 500;
+    border-bottom: 1px solid hsla(15, 4%, 18%, 0.13);
+    padding: 10px 220px 10px 30px; 
+    text-align: start;
+    vertical-align: middle;
+
+}
+td{
+    color: hsl(14, 45%, 36%);
+    font-weight: bolder;
+    border-bottom: 1px solid hsla(15, 4%, 18%, 0.13);
+    text-align: start;
+    vertical-align: middle;
+    padding: 10px 220px 10px 30px; 
+}
+table{
+    border-collapse:collapse ;
+}
+.sem-linha{
+    border-bottom: 0px solid black;}
