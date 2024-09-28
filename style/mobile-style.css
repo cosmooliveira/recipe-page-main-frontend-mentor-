@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media (max-width: 800px) {
+    #area-branca{
+        width: 375px;
+        border-radius: 0;
+        padding: 0px;
+        margin: 0 auto ;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    #mobile-area{
+        padding: 0px 30px ;
+    }
+    img#desktop{
+        width: 100%;
+        border-radius: 0;
+    }
+    th{
+        padding: 10px 10px 10px 30px; 
+    }
+    td{
+        padding: 10px 100px 10px 80px; 
+    }
+    p.espacamento-nutrition{
+        font-size: 17px;
+    }
+}

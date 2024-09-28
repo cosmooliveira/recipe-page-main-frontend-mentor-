@@ -21,9 +21,10 @@ body{
     padding: 40px;
     margin: 125px auto ;
     border-radius: 30px;
+    transition-duration: .5s;
 }
 /*configurações da tela de fundo branca*/
-img{
+img#desktop{
     width: 100%;
     border-radius: 10px;
 }
