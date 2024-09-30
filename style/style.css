@@ -1,122 +1,93 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: "Outfit";
 }
-/*configurações globais*/
 body{
-    height: 100%;
     background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
 }
-/* configurações da tela fundo*/
-#area-branca{
-    background-color: white;
+main{
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    margin: 50px;
     width: 650px;
-    padding: 40px;
-    margin: 125px auto ;
-    border-radius: 30px;
+    border-radius: 20px;
     transition-duration: .5s;
 }
-/*configurações da tela de fundo branca*/
-img#desktop{
+
+img{
     width: 100%;
     border-radius: 10px;
 }
-/*configurações da imagem principal*/
-h1, h2{
-    font-family: "Young Serif";
+
+h1,h2{
+    font-family: 'Young Serif', serif;
+    font-weight: 100;
+    margin-bottom: 20px;
 }
 h2{
     color: hsl(14, 45%, 36%);
 }
-/*configurações globais da fonte do texto h1 e h2*/
-h1{
-    font-size: 2.5rem;
-    font-weight: 500;
+p,h3,li,td{
+    font-family: 'Outfit', sans-serif;
 }
-h1.espacamento{
-    padding-top: 20px;
-}
-p.espacamento, h2.espacamento{
-    padding: 20px 0;
-}
-p.espacamento, li{
-    color: hsl(30, 10%, 34%);
-}
-/*confirações do h1 e o primeiro paragrafo 
-OBS: também estão configurada a cor do texto das li*/
-
-div.preparation-time{
-    background-color: hsla(330, 100%, 98%, 0.699);
-    padding: 30px 30px 15px 30px;
-    margin-top: 20px;
+section#Preparation{
+    background-color: #fff7fc;
+    padding: 20px;
     border-radius: 10px;
 }
-h3.preparation-time{
-    padding-bottom:20px ;
+h3{
     color: hsl(332, 51%, 32%);
-}
-li.preparation-time::marker{
-    color: hsl(332, 51%, 32%);
-}
-ul{
-    padding-left: 20px;
-}
-/*todas as configurções da primeira parte o preparation time*/
-li::marker{
-    color: hsl(14, 45%, 36%);
-    
-}
-h2.espacamento{
-    font-weight: 500;
-    font-size: 28px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 li{
-    padding-left: 15px;
-    padding-bottom: 10px;
+    line-height: 1.5em;
+    padding-left: 15px ;
+    margin-bottom: 0.6rem;
+    
 }
-hr{
-    margin-top:25px ;
-    margin-bottom: 15px;
-    border-color: hsla(15, 4%, 18%, 0.075);
+li::marker{
+    color:hsl(14, 45%, 36%);
+    font-weight: 900;
+    
+}
+section > ul{
+    margin-left: 25px;
+}
+p{
+    margin-bottom: 30px;
 }
 ol{
-    padding-left: 25px;
+    padding-left: 20px;
 }
-li::marker {
-    font-weight: bolder;
-}
-/*todas as configurações do instrutions*/
-p.espacamento-nutrition{
-    color: hsl(30, 10%, 34%);
-    padding-bottom: 20px;
+hr{
+    margin: 20px 0px;
+    border-style: groove;
 }
 
-th{
-    color: hsl(30, 10%, 34%);
-    font-weight: 500;
-    border-bottom: 1px solid hsla(15, 4%, 18%, 0.13);
-    padding: 10px 220px 10px 30px; 
-    text-align: start;
-    vertical-align: middle;
-
-}
-td{
-    color: hsl(14, 45%, 36%);
-    font-weight: bolder;
-    border-bottom: 1px solid hsla(15, 4%, 18%, 0.13);
-    text-align: start;
-    vertical-align: middle;
-    padding: 10px 220px 10px 30px; 
-}
 table{
-    border-collapse:collapse ;
+    width: 100%;
+    border-collapse: collapse ;
 }
-.sem-linha{
-    border-bottom: 0px solid black;}
+tr td{
+    border-bottom: 2px groove hsl(24, 5%, 18%,0.1)  ;
+    text-align: left;
+    padding: 10px;
+    
+}
+.cor-numero{
+    color:hsl(14, 45%, 36%);
+    font-weight: 900;
+}

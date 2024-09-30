@@ -1,0 +1,23 @@
+@media (max-width:800px){
+
+    main{
+        width: 375px;
+    }
+}
+@media (max-width:400px) {
+    
+    img{
+        width: 100%;
+        border-radius: 0px;
+    }
+    main{
+        background-color: hsl(0, 0%, 100%);
+        padding: 0px;
+        border-radius: 20px;
+        margin: 0px;
+        
+    }
+    div#pad{
+        padding: 30px;
+    }
+}
